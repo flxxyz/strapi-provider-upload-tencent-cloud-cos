@@ -40,7 +40,7 @@ module.exports = {
             },
             (err, data) => {
               if (err) return reject(err);
-              file.url = `http://${data.Location}`;
+              file.url = `https://${data.Location}`;
               if (BaseOrigin) {
                 file.url = new URL(new URL(file.url).pathname, BaseOrigin).href;
               }
